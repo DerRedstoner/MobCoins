@@ -1,0 +1,86 @@
+##########################
+# MobCoins Configuration #
+##########################
+
+# Here, you should connect a MySQL database to save playerdata
+mysql:
+  host: "localhost"
+  port: 3306
+  database: "mobcoins"
+  username: "admin"
+  password: "password"
+
+# Here, you can configure how many coins you get when killing a mob
+coins:
+  BAT: 1
+  BLAZE: 1
+  CAVE_SPIDER: 1
+  CHICKEN: 1
+  COW: 1
+  CREEPER: 1
+  ELDER_GUARDIAN: 1
+  ENDER_DRAGON: 1
+  ENDERMAN: 1
+  ENDERMITE: 1
+  GHAST: 1
+  GUARDIAN: 1
+  HORSE: 1
+  IRON_GOLEM: 1
+  LLAMA: 1
+  MAGMA_CUBE: 1
+  MUSHROOM_COW: 1
+  OCELOT: 1
+  PIG: 1
+  PIG_ZOMBIE: 1
+  PLAYER: 1
+  RABBIT: 1
+  SHEEP: 1
+  SILVERFISH: 1
+  SKELETON: 1
+  SLIME: 1
+  SPIDER: 1
+  SQUID: 1
+  VILLAGER: 1
+  WITCH: 1
+  WITHER: 1
+  WOLF: 1
+  ZOMBIE: 1
+
+# Here, you can configure the item shop that accepts mobcoins as its currency
+shop:
+  rows: 3
+  0:
+    item: STICK
+    type: 0
+    name: ""
+    lore: ""
+    amount: 2
+    slot: 0
+    cost: 2
+  1:
+    item: DIAMOND
+    type: 0
+    name: "&cDiamant des Reichtums"
+    lore: "&eHello,&6test"
+    amount: 10
+    slot: 1
+    cost: 100
+  2:
+    item: WOOL
+    type: 3
+    name: "&f&lWOOL"
+    lore: ""
+    amount: 1
+    slot: 2
+    cost: 1
+
+# Here, you can customize all messages of the plugin
+messages:
+  prefix: "&8[&eMobCoins&8]"
+  shopTitle: "&eMobCoins Shop"
+  boughtError: "%prefix% &cYou need &e%missing% mobcoins &cmore to buy this item!"
+  boughtSuccess: "%prefix% &aYou just bought &f%amount%x %item% &afor &e%cost% mobcoins&a!"
+  onReceive: "%prefix% &aYou received &e%coins% mobcoins &afor killing a &f%entity%&a!"
+  onReceiveOne: "%prefix% &aYou received &e%coins% mobcoin &afor killing a &f%entity%&a!"
+  balance: "%prefix% &aYou currently have &e%balance% mobcoins&a!"
+  inventoryFull: "%prefix% &cYour inventory is full!"
