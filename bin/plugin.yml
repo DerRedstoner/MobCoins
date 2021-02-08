@@ -1,8 +1,0 @@
-name: MobCoins
-version: 1.0
-author: DerRedstoner
-main: de.derredstoner.mobcoins.main.Main
-
-commands:
-   mobcoins: 
-      description: Open the shop GUI
